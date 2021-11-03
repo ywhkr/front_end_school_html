@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변단위</title>
+    <style>
+      .one {
+        width: 50%;
+        /*  자기 부모가 가진 넓이의 절반 */
+        background-color: darkblue;
+        height: 200px;
+      }
+
+      .two {
+        width: 50%;
+        background-color: red;
+        height: 100px;
+      }
+
+      .three {
+        height: 100px;
+        width: 50vw;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="two"></div>
+    </div>
+    <br />
+    <div class="one">
+      <div class="three"></div>
+    </div>
+  </body>
+</html>
