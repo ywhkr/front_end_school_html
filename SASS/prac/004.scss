@@ -1,0 +1,13 @@
+ul {
+  li {
+    &:hover {
+      background-color: #fff;
+      cursor: pointer;
+    }
+    &:last-child {
+      border-bottom: 2px solid black;
+    }
+  }
+}
+
+// &는 부모를 상속받는 문자

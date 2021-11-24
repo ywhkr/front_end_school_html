@@ -1,0 +1,21 @@
+// @mixin 이름(매개변수) 사용
+// @include 이름(매개변수) 사용
+
+// @mixin hojun-font($x, $y) {
+//   font-size: $x * $y + px;
+// }
+
+// div {
+//   @include hojun-font(10, 10);
+// }
+
+@mixin hojun-font($x, $y) {
+  font-size: $x * $y + px;
+  @content;
+}
+
+div {
+  @include hojun-font(10, 10) {
+    color: red;
+  }
+}
